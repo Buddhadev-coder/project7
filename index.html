@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="font-roboto">
+    <header class=" top-0 left-0 w-full z-50 relative  bg-[#0a0a0a] font-roboto">
+        <div class="container  2xl:max-w-[1140px]">
+            <div class="flex items-center justify-between py-6">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="./image/my-logo-2.svg" alt="Logo" class="w-[180px] md:w-[250px]">
+                    </a>
+                </div>
+
+                <!-- Hamburger Button -->
+                <button id="menuBtn" class="menu-btn-3 flex flex-col justify-between w-8 h-6 md:hidden ">
+                    <span></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <nav id="menu" class="fixed md:static top-0 left-0  md:h-auto w-64 md:w-auto
+          bg-black md:bg-transparent
+          transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out
+          flex flex-col md:flex-row md:items-center md:space-x-8 space-y-6 md:space-y-0
+          text-white font-medium capitalize text-[18px] p-8 md:p-0 z-40">
+
+                    <ul class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
+                        <li><a href="#home" class="hover:text-yellow-400 relative">home</a></li>
+                        <li><a href="#service" class="hover:text-yellow-400 relative">services</a></li>
+                        <li><a href="#works" class="hover:text-yellow-400 relative">works</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400 relative">about</a></li>
+                        <li><a href="#client" class="hover:text-yellow-400 relative">client</a></li>
+                        <li><a href="#blog" class="hover:text-yellow-400 relative">blog</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 relative">contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+
+        <section id="home" class="Banner relative w-[100%]  bg-black">
+            <div class="container 2xl:max-w-[1140px] relative ">
+                <div id="sub-section-1" class="pt-[140px]">
+                    <div class="hero-content w-[100%] md:w-[600px]">
+                        <h1 class="text-[28px] md:text-[80px] leading-[90px] font-bold text-white">We're a digital
+                            agency.</h1>
+                    </div>
+                    <a href="#"
+                        class="button-9 relative inline-block mt-[30px] py-3 px-7 border transition-all duration-500 ease-in  border-red-600 text-white text-[18px] font-bold">
+                        <span class="relative z-[9999]">Gatting Started</span>
+                    </a>
+                </div>
+                <div id="sub-section-2" class="mt-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div id="service-box-1" class="text-white bg-[#e91e63] px-10 py-13">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-[45px]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+                            </svg>
+
+                        </div>
+                        <h3 class="text-[25px] font-bold mt-[15px] ">Future Vision.</h3>
+                        <div class="hr-box mb-[15px]">
+                            <hr class="w-[40px] h-2px bg-white">
+                        </div>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.
+                        </p>
+                    </div>
+                    <div id="service-box-2"
+                        class="text-white bg-[#000] px-10 py-13 transition-all duration-500 ease-in hover:bg-[#e91e63] group">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-[45px]  text-red-500 group-hover:text-white transition-all duration-500 ease-in">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                            </svg>
+
+
+                        </div>
+                        <h3 class="text-[25px] font-bold mt-[15px] ">Product Design.</h3>
+                        <div class="hr-box mb-[15px]">
+                            <hr class="w-[40px] h-2px bg-white">
+                        </div>
+                        <p>
+                            There are many variations of passages of available, but the majority alteration in some
+                            form.
+                        </p>
+                    </div>
+                    <div id="service-box-3"
+                        class="text-white bg-[#000] px-10 py-13 transition-all duration-500 ease-in hover:bg-[#e91e63] group">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-[45px] text-red-500 group-hover:text-white transition-all duration-500 ease-in">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+
+
+                        </div>
+                        <h3 class="text-[25px] font-bold mt-[15px] ">Innovative Solutions.</h3>
+                        <div class="hr-box mb-[15px]">
+                            <hr class="w-[40px] h-2px bg-white">
+                        </div>
+                        <p class="text-[18px]">
+                            The generated Lorem Ipsum is therefore always free from repetition, injected humour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="service" class="my-20">
+            <div class="container 2xl:max-w-[1140px] relative">
+                <div class="service-content-box mb-[20px] md:mb-[40px]">
+                    <div class="divider">
+                        <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
+                    </div>
+                    <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]">Services.</h2>
+                    <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]">we work with you, not for
+                        you.</h4>
+                </div>
+                <div class="service-btn-sec grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] ">
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Digital Strategy</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            UI/UX Design</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Product Design</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Content Strategy</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Design & Concept</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Social Media</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Media Planning</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px] group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            Brand Identity</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+                    <div
+                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group">
+                        <h3
+                            class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            SEO Optimization</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="works" class="mb-20">
+            <div class="container 2xl:max-w-[1140px]">
+                <div class="flex flex-column md:flex-row justify-between items-center">
+                    <div class="works-content-box  mb-[20px] md:mb-[40px]">
+                        <div class="divider">
+                            <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
+                        </div>
+                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]">Works.</h2>
+                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]">things we've made.</h4>
+                    </div>
+                    <a href="#"
+                        class="button-9 relative group inline-block mt-[30px] py-3 px-7 border transition-all duration-500 ease-in uppercase border-red-600 text-black text-[18px] font-bold">
+                        <span class="relative z-[9999] group-hover:text-white transition-all duration-500 ease-in">view
+                            all</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/works-image-1.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/works-image-2.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/work-image-3.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/works-image-4.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-center">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/works-image-5.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/work-image-6.jpg" alt=""
+                                class="w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-center">
+                            <div class="overlay">
+                                <h3 class="text-[1.5rem] mb-[5px] font-medium">Product Design</h3>
+                                <p class="text-[1rem] text-[#ccc]">Design / Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="about" class="mb-20">
+            <div class="container 2xl:max-w-[1140px]">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="about-content-box  mb-[20px] md:mb-[40px]">
+                        <div class="divider">
+                            <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
+                        </div>
+                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]">About.</h2>
+                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]">WE'RE MORE THAN A
+                            DIGITAL AGENCY.
+                        </h4>
+                    </div>
+                    <div class="work-information-box  w-[100%] md:w-[50%]">
+                        <p class="text-black text-[18px] font-medium">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vitae necessitatibus reiciendis iste
+                            aspernatur tempore.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- LEFT LARGE IMAGE -->
+                    <div class="relative md:col-span-2 group overflow-hidden ">
+                        <img src="./image/imgi_1_about_01.jpg" alt="Teamwork"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105  grayscale group-hover:grayscale-0">
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500">
+                        </div>
+                        <div class="absolute bottom-6 left-6 text-white z-10">
+                            <h3 class="font-semibold text-lg">Teamwork</h3>
+                            <p class="text-sm text-gray-200">Committed and creative</p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT TWO SMALL IMAGES STACKED -->
+                    <div class="flex flex-col gap-6">
+
+                        <div class="relative group overflow-hidden  flex-1">
+                            <img src="./image/imgi_1_about_02.jpg" alt="Philosophy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
+                            <div
+                                class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white z-10">
+                                <h3 class="font-semibold text-lg">Philosophy</h3>
+                                <p class="text-sm text-gray-200">Trust pays off</p>
+                            </div>
+                        </div>
+
+                        <div class="relative group overflow-hidden flex-1">
+                            <img src="./image/imgi_1_about_03.jpg" alt="Office"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105  grayscale group-hover:grayscale-0">
+                            <div
+                                class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all duration-500">
+                            </div>
+                            <div class="absolute bottom-6 left-6 text-white z-10">
+                                <h3 class="font-semibold text-lg">Office</h3>
+                                <p class="text-sm text-gray-200">Berlin, UK</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-10 mt-8 md:mt-12 ">
+                    <div class="">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]">Who we are</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium">
+                            Bring to the table win-win survival strategies to
+                            ensure proactive domination. At the end of the day, going forward will have multiple
+                            touchpoints for offshoring.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]">Our philosophy</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium">
+                            A new normal that has evolved from generation X is on the runway heading towards a
+                            streamlined cloud solution. User generated content in real-time.
+                        </p>
+                    </div>
+                    <div class="">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]">How we work</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium">
+                            Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                            Override the digital divide with additional clickthroughs from DevOps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="client" class="mb-20">
+            <div class="container 2xl:max-w-[1140px]">
+                <div class="flex justify-between items-center flex-col md:flex-row pb-20 border-b border-black">
+                    <div class="client-image w-[100%] md:w-[38.5%]  relative z-[999]">
+                        <img src="./image/imgi_1_client_01.jpg" alt=""
+                            class="w-[100%] h-[100%] object-fit-cover relative z-[99]">
+                        <div class="w-[100px] h-[100px] bg-red-600 absolute -right-5 -bottom-5 z-[9]"></div>
+                    </div>
+                    <div class="client-content-box w-[100%] md:w-[58.5%]  md:pl-[70px]">
+                        <div>
+                            <div class="divider">
+                                <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
+                            </div>
+                            <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[25px]">What
+                                Clients Say.</h2>
+                            <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]">
+                                WE'RE MORE THAN A DIGITAL AGENCY
+                            </h4>
+                        </div>
+                        <p
+                            class="text-[24px] font-medium text-[#747474] leading-[34px] mt-[25px] mb-[30px] inline-block">
+                            We are motivated by the satisfaction of our clients. Put your trust in us and share in our
+                            growth Asset Management is made up of a team of expert, committed and experienced people
+                            with a passion for financial markets. Our goal is to achieve continuous and sustainable
+                            growth of our clients.
+                        </p>
+                        <div class="divider">
+                            <span class="w-[40px] h-[2px] bg-[#D1D1D1] inline-block mb-[35px]"></span>
+                        </div>
+                        <h4 class="text-[17px] font-bold text-black ">
+                            ARON SMITH, UX DESIGNER
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8 mt-10">
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_01.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_02.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_03.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_04.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_05.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="./image/imgi_1_06.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="blog" class="mb-20">
+            <div class="container 2xl:max-w-[1140px]">
+                <div class="blog-content mb-20">
+                    <h2 class="text-[30px] font-bold md:text-[60px] text-center text-black leading-[50px] mb-[15px]">
+                        Latest News.
+                    </h2>
+                    <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px] text-center">
+                        CHECK OUT SOME OF OUR THINKING.
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-1.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm font-bold uppercase tracking-wide opacity-90">Careers</p>
+                                <h3 class="text-xl font-bold mt-1">Winning tactics for a new digital agency</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-2.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom  group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm  font-bold uppercase tracking-wide opacity-90">design/ux</p>
+                                <h3 class="text-xl font-bold mt-1">How to drive your customer experience</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-3.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-bottom  group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm font-bold uppercase tracking-wide opacity-90">Careers</p>
+                                <h3 class="text-xl font-bold mt-1">How to be more productive using sticky notes</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-4.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-center  group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm font-bold uppercase tracking-wide opacity-90">Marketing</p>
+                                <h3 class="text-xl font-bold mt-1">Choose from meeting speak client feedback</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-5.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in  group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm font-bold uppercase tracking-wide opacity-90">design/ux</p>
+                                <h3 class="text-xl font-bold mt-1">How to make your product stand out</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="work-image-sec relative overflow-hidden group">
+                            <img src="./image/news-image-6.jpg" alt=""
+                                class="grayscale w-[100%] h-[600px] object-cover block transition-all duration-400 ease-in object-center  group-hover:grayscale-0">
+                            <div class="overlay">
+
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-0 w-full text-center text-white px-6 transition-all duration-400 group-hover:-translate-y-4">
+                                <p class="text-sm uppercase tracking-wide opacity-90">Careers</p>
+                                <h3 class="text-xl font-bold mt-1">Winning tactics for a new digital agency</h3>
+                                <a href="#"
+                                    class="flex justify-center opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-8">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="bg-black py-10">
+        <div class="container 2xl:max-w-[1140px]">
+            <div class="flex flex-col lg:flex-row items-center justify-between py-[100px]">
+                <div class="flex justify-between items-center gap-3">
+                    <div
+                        class="w-[50px] h-[50px] rounded-[100%] border-2 border-red-700 flex items-center justify-center group hover:-translate-y-2 transition-all duration-400 ease-in">
+                        <a href="#"></a>
+                        <i
+                            class="ri-facebook-fill text-[30px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                        </i>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[50px] h-[50px] rounded-[100%] border-2 border-red-700 flex items-center justify-center group hover:-translate-y-2 transition-all duration-400 ease-in">
+                        <a href="#">
+                            <i
+                                class="ri-twitter-fill text-[30px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                            </i>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[50px] h-[50px] rounded-[100%] border-2 border-red-700 flex items-center justify-center group hover:-translate-y-2 transition-all duration-400 ease-in">
+                        <a href="#">
+                            <i
+                                class="ri-instagram-line text-[30px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                            </i>
+                        </a>
+                    </div>
+                    <div
+                        class="w-[50px] h-[50px] rounded-[100%] border-2 border-red-700 flex items-center justify-center group hover:-translate-y-2 transition-all duration-400 ease-in">
+                        <a href="#">
+                            <i
+                                class="ri-github-fill text-[30px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-content">
+                    <h1 class="text-white text-[50px] font-bold text-center lg:text-left mt-10 lg:mt-0">
+                        Let's Talk?
+                    </h1>
+                </div>
+                <a href="#"
+                    class="button-9 relative inline-block mt-[30px] py-3 px-7 border transition-all duration-500 ease-in border-red-600 text-white text-[18px] font-bold z-[9999]">
+                    <span class="relative z-[9999]">Make an Inquiry!</span>
+                </a>
+
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center md:max-w-[800px] mx-auto py-[40px]">
+                <div class="flex justify-center  group">
+                    <a href="#" class="text-white text-center">
+                        <h3
+                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in">
+                            Berlin
+                        </h3>
+                        <p class="text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                            +21 30 310 0010</p>
+                    </a>
+                </div>
+                <div class="flex justify-center  group">
+                    <a href="#" class="text-white text-center">
+                        <h3
+                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in">
+                            Melbourne
+                        </h3>
+                        <p class=" text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
+                            +21 201 161 0011</p>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <p class="text-[14px] text-[#747474] ">
+                        2025 ©
+                        <a href="#" class="text-[18px] text-white font-bold">
+                            Gentium
+                        </a>
+                        , All rights reserved.
+                    </p>
+                </div>
+                <div class="flex space-x-4 footer-menu">
+                    <a href="#" class="text-[14px] text-white font-bold relative">Terms of Service</a>
+                    <a href="#" class="text-[14px] text-white font-bold relative">Cookie Policy</a>
+                    <a href="#" class="text-[14px] text-white font-bold relative">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
