@@ -13,6 +13,26 @@
 </head>
 
 <body class="">
+    <div class="preloader">
+        <div class="loader-container">
+            <svg class="progress-ring" width="200" height="200">
+                <circle class="progress-ring-bg" cx="100" cy="100" r="90"></circle>
+                <circle class="progress-ring-circle" cx="100" cy="100" r="90"></circle>
+            </svg>
+            <div class="loader-content">
+                <div class="loading-stage">
+                    <div class="stage-current">Loading</div>
+                    <div class="stage-next">Ready</div>
+                </div>
+                <div class="percentage">0</div>
+            </div>
+        </div>
+        <div class="loader-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
     <header class=" top-0 left-0 w-full z-50 relative  bg-[#0a0a0a] font-roboto">
         <div class="container  2xl:max-w-[1140px]">
             <div class="flex items-center justify-between py-6">
@@ -57,12 +77,13 @@
             <div class="container 2xl:max-w-[1140px] relative ">
                 <div id="sub-section-1" class="pt-[140px]">
                     <div class="hero-content w-[100%] md:w-[600px]">
-                        <h1 class="text-[28px] md:text-[80px] leading-[90px] font-bold text-white" data-aos="fade-right">We're a digital
+                        <h1 class="text-[28px] md:text-[80px] leading-[90px] font-bold text-white"
+                            data-aos="fade-right">We're a digital
                             agency.</h1>
                     </div>
                     <a href="#"
                         class="button-9 relative inline-block mt-[30px] py-3 px-7 border transition-all duration-500 ease-in  border-red-600 text-white text-[18px] font-bold">
-                        <span class="relative z-[9999]">Gatting Started</span>
+                        <span class="relative z-[999]">Gatting Started</span>
                     </a>
                 </div>
                 <div id="sub-section-2" class="mt-[100px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -134,13 +155,15 @@
                     <div class="divider">
                         <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
                     </div>
-                    <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]" data-aos="fade-right">Services.</h2>
-                    <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]"  data-aos="fade-right">we work with you, not for
+                    <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]"
+                        data-aos="fade-right">Services.</h2>
+                    <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]" data-aos="fade-right">we
+                        work with you, not for
                         you.</h4>
                 </div>
                 <div class="service-btn-sec grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] ">
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group" data-aos="flip-left">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-left">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Digital Strategy</h3>
@@ -152,8 +175,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group" data-aos="flip-right">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-right">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             UI/UX Design</h3>
@@ -165,8 +188,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"  data-aos="flip-left">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-left">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Product Design</h3>
@@ -178,8 +201,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group " data-aos="flip-right">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group "
+                        data-aos="flip-right">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Content Strategy</h3>
@@ -191,8 +214,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"  data-aos="flip-left">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-left">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Design & Concept</h3>
@@ -204,8 +227,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group" data-aos="flip-right">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-right">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Social Media</h3>
@@ -217,8 +240,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"  data-aos="flip-left">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-left">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Media Planning</h3>
@@ -230,8 +253,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group" data-aos="flip-right">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-right">
                         <h3
                             class="text-black font-bold text-[25px] group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             Brand Identity</h3>
@@ -243,8 +266,8 @@
                         </svg>
 
                     </div>
-                    <div
-                        class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"  data-aos="flip-left">
+                    <div class="flex items-center justify-between bg-[#F3F3F3] px-[30px] py-[30px] hover:bg-[#E9204F] transition-all  duration-400 ease-in group"
+                        data-aos="flip-left">
                         <h3
                             class="text-black font-bold text-[25px]  group-hover:text-white transition-all  duration-400 ease-in group-hover:translate-x-[10px]">
                             SEO Optimization</h3>
@@ -267,8 +290,10 @@
                         <div class="divider">
                             <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
                         </div>
-                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]" data-aos="fade-right">Works.</h2>
-                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]" data-aos="fade-right">things we've made.</h4>
+                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]"
+                            data-aos="fade-right">Works.</h2>
+                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]" data-aos="fade-right">
+                            things we've made.</h4>
                     </div>
                     <a href="#"
                         class="button-9 relative group inline-block mt-[30px] py-3 px-7 border transition-all duration-500 ease-in uppercase border-red-600 text-black text-[18px] font-bold">
@@ -352,8 +377,10 @@
                         <div class="divider">
                             <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
                         </div>
-                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]" data-aos="fade-right">About.</h2>
-                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]" data-aos="fade-right">WE'RE MORE THAN A
+                        <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[15px]"
+                            data-aos="fade-right">About.</h2>
+                        <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]" data-aos="fade-right">
+                            WE'RE MORE THAN A
                             DIGITAL AGENCY.
                         </h4>
                     </div>
@@ -410,23 +437,23 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-10 mt-8 md:mt-12 ">
                     <div class="">
-                        <h3 class="text-[22px] font-bold text-black mb-[20px]"  data-aos="fade-right" >Who we are</h3>
-                        <p class="text-[18px] text-[#00000081] font-medium"  data-aos="fade-right">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]" data-aos="fade-right">Who we are</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium" data-aos="fade-right">
                             Bring to the table win-win survival strategies to
                             ensure proactive domination. At the end of the day, going forward will have multiple
                             touchpoints for offshoring.
                         </p>
                     </div>
                     <div class="">
-                        <h3 class="text-[22px] font-bold text-black mb-[20px]"  data-aos="fade-right">Our philosophy</h3>
-                        <p class="text-[18px] text-[#00000081] font-medium"  data-aos="fade-right">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]" data-aos="fade-right">Our philosophy</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium" data-aos="fade-right">
                             A new normal that has evolved from generation X is on the runway heading towards a
                             streamlined cloud solution. User generated content in real-time.
                         </p>
                     </div>
                     <div class="">
-                        <h3 class="text-[22px] font-bold text-black mb-[20px]"  data-aos="fade-right">How we work</h3>
-                        <p class="text-[18px] text-[#00000081] font-medium"  data-aos="fade-right">
+                        <h3 class="text-[22px] font-bold text-black mb-[20px]" data-aos="fade-right">How we work</h3>
+                        <p class="text-[18px] text-[#00000081] font-medium" data-aos="fade-right">
                             Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
                             Override the digital divide with additional clickthroughs from DevOps.
                         </p>
@@ -447,9 +474,11 @@
                             <div class="divider">
                                 <span class="w-[40px] h-[2px] bg-red-500 inline-block mb-[35px]"></span>
                             </div>
-                            <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[25px]"  data-aos="fade-right">What
+                            <h2 class="text-[30px] font-bold md:text-[60px] text-black leading-[50px] mb-[25px]"
+                                data-aos="fade-right">What
                                 Clients Say.</h2>
-                            <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]"  data-aos="fade-right">
+                            <h4 class="text-red-600 font-bold uppercase text-[15px] md:text-[20px]"
+                                data-aos="fade-right">
                                 WE'RE MORE THAN A DIGITAL AGENCY
                             </h4>
                         </div>
@@ -470,7 +499,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8 mt-10">
-                    <div class="flex items-center justify-center" >
+                    <div class="flex items-center justify-center">
                         <img src="./image/imgi_1_01.png" alt="">
                     </div>
                     <div class="flex items-center justify-center">
@@ -693,7 +722,8 @@
                     </div>
                 </div>
                 <div class="contact-content">
-                    <h1 class="text-white text-[50px] font-bold text-center lg:text-left mt-10 lg:mt-0" data-aos="fade-right">
+                    <h1 class="text-white text-[50px] font-bold text-center lg:text-left mt-10 lg:mt-0"
+                        data-aos="fade-right">
                         Let's Talk?
                     </h1>
                 </div>
@@ -707,20 +737,20 @@
                 <div class="flex justify-center  group">
                     <a href="#" class="text-white text-center">
                         <h3
-                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in" >
+                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in">
                             Berlin
                         </h3>
-                        <p class="text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in" >
+                        <p class="text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
                             +21 30 310 0010</p>
                     </a>
                 </div>
                 <div class="flex justify-center  group">
                     <a href="#" class="text-white text-center">
                         <h3
-                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in" >
+                            class="text-white text-[20px] font-bold group-hover:text-red-600 transition-all duration-300 ease-in">
                             Melbourne
                         </h3>
-                        <p class=" text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in" >
+                        <p class=" text-[18px] text-white group-hover:text-red-600 transition-all duration-300 ease-in">
                             +21 201 161 0011</p>
                     </a>
                 </div>
@@ -729,7 +759,7 @@
                 <div>
                     <p class="text-[14px] text-[#747474] ">
                         2025 ©
-                        <a href="#" class="text-[18px] text-white font-bold" >
+                        <a href="#" class="text-[18px] text-white font-bold">
                             Gentium
                         </a>
                         , All rights reserved.
@@ -744,6 +774,7 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
