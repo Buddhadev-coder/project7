@@ -73,3 +73,12 @@ window.addEventListener('scroll', () => {
         addClass.classList.remove("color");
     }
 });
+
+//==============AOS ANIMATION============
+AOS.init({
+    duration: 1000,
+    delay: 50,
+    easing: 'ease-in-out',
+    once: false,
+    offset: 200,
+});

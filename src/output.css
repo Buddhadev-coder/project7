@@ -434,6 +434,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded-\[100\%\] {
     border-radius: 100%;
   }
