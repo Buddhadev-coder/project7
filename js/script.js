@@ -93,3 +93,27 @@ window.addEventListener("load", function () {
         document.getElementById("preloader").style.display = "none";
     }, 1000); // match CSS transition time
 });
+
+const smallCursor = document.querySelector(".cursor1")
+const bigCursor = document.querySelector(".cursor2")
+window.addEventListener('mousemove', (e) => {
+
+    // ======for small cursor =====
+    gsap.to(smallCursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.5,
+        ease: "power1.out"
+    });
+
+    // ====== for big cursor ========
+
+    gsap.to(bigCursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 1,
+        ease: "power1.out"
+    });
+
+
+})

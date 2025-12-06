@@ -12,9 +12,34 @@
 
 
 
+
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+}
+.cursor1 {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #e91e63;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  border-radius: 100%;
+}
+.cursor2 {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e91e63;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  border-radius: 100%;
 }
 
 .container {

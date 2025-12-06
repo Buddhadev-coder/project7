@@ -191,6 +191,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .sticky {
     position: sticky;
   }
@@ -955,11 +958,6 @@
   .md\:text-\[40px\] {
     @media (width >= 48rem) {
       font-size: 40px;
-    }
-  }
-  .md\:text-\[50px\] {
-    @media (width >= 48rem) {
-      font-size: 50px;
     }
   }
   .md\:text-\[60px\] {
